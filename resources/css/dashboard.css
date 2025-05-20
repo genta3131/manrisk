@@ -1,0 +1,36 @@
+/* Dashboard layout custom styles */
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+aside {
+  min-height: 100vh;
+  background-color: #1e40af; /* Tailwind blue-800 */
+  color: white;
+}
+
+aside nav a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 0.25rem;
+  color: white;
+  text-decoration: none;
+}
+
+aside nav a:hover,
+aside nav a.active {
+  background-color: #2563eb; /* Tailwind blue-600 */
+  font-weight: 600;
+}
+
+main {
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  max-width: 960px;
+  margin: auto;
+}
