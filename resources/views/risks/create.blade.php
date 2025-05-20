@@ -36,16 +36,26 @@
             </select>
         </div>
 
-        <div>
+       <div>
             <label for="risk_category" class="block font-medium text-gray-700">Risk Category</label>
-            <input type="text" name="risk_category" id="risk_category" value="{{ old('risk_category') }}" required
+            <select name="risk_category" id="risk_category" required
                 class="mt-1 block w-full border border-black rounded-md p-2 text-black bg-green-50 focus:ring-2 focus:ring-green-500 focus:outline-none">
+                <option value="Risiko Strategis" {{ old('risk_category') == 'Risiko Strategis' ? 'selected' : '' }}>Risiko Strategis</option>
+                <option value="Risiko Operasional" {{ old('risk_category') == 'Risiko Operasional' ? 'selected' : '' }}>Risiko Operasional</option>
+                <option value="Risiko Keuangan" {{ old('risk_category') == 'Risiko Keuangan' ? 'selected' : '' }}>Risiko Keuangan</option>
+                <option value="Risiko Kepatuhan" {{ old('risk_category') == 'Risiko Kepatuhan' ? 'selected' : '' }}>Risiko Kepatuhan</option>
+                <option value="Risiko Kecurangan" {{ old('risk_category') == 'Risiko Kecurangan' ? 'selected' : '' }}>Risiko Kecurangan</option>
+            </select>
         </div>
 
-        <div>
-            <label for="identification_date_range" class="block font-medium text-gray-700">Identification Date Range</label>
-            <input type="text" name="identification_date_range" id="identification_date_range" value="{{ old('identification_date_range') }}"
-                class="mt-1 block w-full border border-black rounded-md p-2 text-black bg-green-50 focus:ring-2 focus:ring-green-500 focus:outline-none" placeholder="Select date range">
+
+        <div class="flex items-center gap-2">
+            <label for="identification_date_start" class="block font-medium text-gray-700 w-40">Periode Identifikasi</label>
+            <input type="date" name="identification_date_start" id="identification_date_start" value="{{ old('identification_date_start') }}"
+                class="mt-1 block border border-black rounded-md p-2 text-black bg-green-50 focus:ring-2 focus:ring-green-500 focus:outline-none w-40">
+            <span class="inline-block text-black ">s.d</span>
+            <input type="date" name="identification_date_end" id="identification_date_end" value="{{ old('identification_date_end') }}"
+                class="mt-1 block border border-black rounded-md p-2 text-black bg-green-50 focus:ring-2 focus:ring-green-500 focus:outline-none w-40">
         </div>
 
         <div>

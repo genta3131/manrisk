@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('status');           // Status Resiko
             $table->string('risk_category');    // Kategori Resiko
             // // $table->string('');    // Departemen / Unit Kerja / Fungsi 
-            $table->string('identification_date')->nullable();    // Periode Identifikasi Risiko
+            $table->date('identification_date_start')->nullable();    // Start Periode Identifikasi Risiko
+            $table->date('identification_date_end')->nullable();      // End Periode Identifikasi Risiko
             $table->string('description');      // Deskripsi atau Kejadian Risiko (Risk Event)
             $table->integer('Probability');     // Probabilitas Risiko Inheren (Sebelum Mitigasi Risiko)
             $table->integer('impact');          // Dampak Risiko Inheren

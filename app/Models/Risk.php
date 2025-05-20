@@ -14,7 +14,8 @@ class Risk extends Model
         'risk_id',
         'status',
         'risk_category',
-        'identification_date',
+        'identification_date_start',
+        'identification_date_end',
         'description',
         'probability',
         'impact',
@@ -22,7 +23,8 @@ class Risk extends Model
     ];
 
     protected $casts = [
-        'identification_date' => 'string',
+        'identification_date_start' => 'date',
+        'identification_date_end' => 'date',
         'probability' => 'integer',
         'impact' => 'integer',
         'level' => 'integer',

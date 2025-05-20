@@ -1,11 +1,7 @@
 <x-layouts.app>
 
 <div class="container mx-auto p-4">
-<<<<<<< HEAD
     <h1 class="text-2xl font-bold mb-4">Risiko</h1>
-=======
-    <h1 class="text-2xl font-bold mb-4">Mitigasi</h1>
->>>>>>> 3c7dcb5ace57f3e69fd8cd3e88187cf704c35e5d
 
     @if(session('success'))
         <div class="bg-green-200 text-green-800 p-2 rounded mb-4">
