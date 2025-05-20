@@ -1,7 +1,7 @@
 <x-layouts.app>
 
 <div class="container mx-auto p-4">
-    <h1 class="text-2xl font-bold mb-4">Mitigasi Risiko</h1>
+    <h1 class="text-2xl font-bold mb-4">Mitigasi</h1>
 
     @if(session('success'))
         <div class="bg-green-200 text-green-800 p-2 rounded mb-4">
